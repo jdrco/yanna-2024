@@ -1,0 +1,44 @@
+body {
+  background: white;
+  margin: 0;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.pixel-text {
+  color: black;
+  font-family: monospace;
+  font-size: 8px;
+  line-height: 8px;
+  white-space: pre;
+  z-index: 2;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#dvd-logo {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
