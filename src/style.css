@@ -36,9 +36,26 @@ body {
 
 #dvd-logo {
   position: absolute;
-  width: 200px;
-  height: auto;
+  width: 400px;
+  height: 250px;
   user-select: none;
   opacity: 0;
   transition: opacity 0.3s;
+  object-fit: cover;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  #dvd-logo {
+    width: 200px;
+    height: 125px;
+  }
+}
+
+/* Smaller mobile devices */
+@media screen and (max-width: 480px) {
+  #dvd-logo {
+    width: 160px;
+    height: 100px;
+  }
 }
